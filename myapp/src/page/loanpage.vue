@@ -7,8 +7,8 @@
       <f7-link link="getlink(1)">
         <img id="withshare_img" src="../assets/img/home_icon_enjoy.png">
         <div>
-          <p>和享贷</p>
-          <p>手机在线审批，快速审批</p>
+          <p style="padding-top: 60px;font-size: 80px;color: #333333">和享贷</p>
+          <p style="font-size: 38px;color: #999999">手机<span style="color:#ff8f19;font-size: 40px">在线</span>审批，<span style="color:#ff8f19;font-size: 40px">快速</span>审批</p>
         </div>
       </f7-link>
     </div>
@@ -93,7 +93,7 @@
     list-style: none;
   }
   .firstpage{
-    background-color: #b6cbee;
+    background-color: #f7f7f7;
   }
   .with_share{
     width: 100%;
@@ -103,17 +103,20 @@
   }
   p{
     display: block;
+    text-align: left;
     font-size: 50px;
   }
   .firstpage #withshare_img{
     float: left;
     margin-top: 20px;
     margin-left: 100px;
+    margin-right: 60px;
   }
   .product{
     background-color: white;
     height: 150px;
     line-height: 150px;
+    border-bottom: 1px solid;
   }
   .first{
     margin-top: 20px;
