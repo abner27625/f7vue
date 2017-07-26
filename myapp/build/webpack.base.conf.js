@@ -21,6 +21,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
+      //别称 也可以用来简化导入时的地址
+      'component':path.resolve(__dirname, '../src/components'),
+      'img':path.resolve(__dirname, '../src/assets/img'),
+      'page':path.resolve(__dirname, '../src/page'),
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src')
     }
