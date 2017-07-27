@@ -28,13 +28,15 @@
         </div>
       </div>
       <f7-list>
-        <f7-list-item title="我的借款" link="/language/" media="<i class='iconfont icon-language'></i>"></f7-list-item>
-        <f7-list-item title="提现" link="/feedback/" media="<i class='iconfont icon-feedback2'></i>"></f7-list-item>
-        <f7-list-item title="还款计划" link="/about/" media="<i class='iconfont icon-about1'></i>"></f7-list-item>
+        <f7-list-item title="我的借款" :link="/question/" media="<i class='iconfont icon-language'></i>"></f7-list-item>
+        <f7-list-item title="我要签约" :link="/question/" media="<i class='iconfont icon-language'></i>"></f7-list-item>
+        <f7-list-item title="提现" :link="/question/" media="<i class='iconfont icon-feedback2'></i>"></f7-list-item>
+        <f7-list-item title="还款计划" :link="/question/" media="<i class='iconfont icon-about1'></i>"></f7-list-item>
       </f7-list>
+
       <f7-list>
-        <f7-list-item title="常见问题" link="/feedback/" media="<i class='iconfont icon-feedback2'></i>"></f7-list-item>
-        <f7-list-item title="关于" link="/about/" media="<i class='iconfont icon-about1'></i>"></f7-list-item>
+        <f7-list-item title="常见问题" :link="/about/" media="<i class='iconfont icon-feedback2'></i>"></f7-list-item>
+        <f7-list-item title="关于" :link="/about/" media="<i class='iconfont icon-about1'></i>"></f7-list-item>
       </f7-list>
     </div>
 </template>

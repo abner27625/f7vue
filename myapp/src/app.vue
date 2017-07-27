@@ -7,13 +7,14 @@
 
 
     <f7-views>
-      <f7-view id="main-view" navbar-through :dynamic-navbar="true" main>
-        <f7-navbar theme="white">
+      <!--navbar-through :dynamic-navbar="true"-->
+      <f7-view id="main-view"   main>
+        <!--<f7-navbar theme="white">
           <f7-nav-left></f7-nav-left>
           <f7-nav-center sliding>我就看看</f7-nav-center>
           <f7-nav-right>
           </f7-nav-right>
-        </f7-navbar>
+        </f7-navbar>-->
         <f7-pages>
           <f7-page toolbar-fixed navbar-fixed>
             <f7-toolbar tabbar labels>
@@ -47,14 +48,6 @@
       }
     },
     methods:{
-      /*timer(){
-        if(this.time > 0){
-          this.time--;
-          setTimeout(this.timer,1000)
-        } else {
-          this.routes.push('/loanpage')
-        }
-      },*/
       tabActived(tab) {
         this.activedTab = tab
       }
@@ -73,6 +66,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+  .tab-link{
+    width: 50%;
+    height: 100px;
   }
 </style>
 

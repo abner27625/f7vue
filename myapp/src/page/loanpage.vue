@@ -4,10 +4,10 @@
       <app-banner :listImg="listImg"></app-banner>
     </div>
     <div class="with_share">
-      <f7-link link="getlink(1)">
+      <f7-link href="/about/" >
         <img id="withshare_img" src="../assets/img/home_icon_enjoy.png">
         <div>
-          <p style="padding-top: 60px;font-size: 80px;color: #333333">和享贷</p>
+          <p style="padding-top: 60px;font-size: 80px;color: #333333" >和享贷</p>
           <p style="font-size: 38px;color: #999999">手机<span style="color:#ff8f19;font-size: 40px">在线</span>审批，<span style="color:#ff8f19;font-size: 40px">快速</span>审批</p>
         </div>
       </f7-link>
@@ -78,6 +78,9 @@
       methods:{
         getLink(type){
           return '/loanDetailInfo/?type=${type}'
+        },
+        goto(){
+          this.$f7.alert("测试一下仅此而已")
         }
       },
       computed:{

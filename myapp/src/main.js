@@ -32,7 +32,8 @@ new Vue({
   template: '<app/>',
   framework7:{
     root:'#app',
-    routes:router
+    routes:router,
+    pushState: true,
   },
   components: {
     app:App

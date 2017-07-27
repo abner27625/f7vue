@@ -5,14 +5,19 @@ import Hello from '@/components/Hello'
 Vue.use(Router)*/
 
 export default [
-  {
-    path:'/accountpage/',
+  /*{
+    path:'/accountpage',
     components:require('../page/accountpage.vue')
   },{
-    path:'/loanpage/',
+    path:'/loanpage',
     components:require('../page/loanpage.vue')
-  },{
+  },*/
+  {
     path:'/about/',
     components:require('../page/about.vue')
+  },
+  {
+    path:'/question/',
+    components:require('../page/question.vue'),
   }
 ]
