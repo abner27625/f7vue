@@ -16,11 +16,11 @@
     <f7-block class="product first">
       <f7-grid no-gutter>
         <f7-col width="50">
-          <img src="../assets/img/home_icon_socia.png">
+          <img class='product_img' src="../assets/img/home_icon_socia.png">
           <span>公积金贷</span>
         </f7-col>
         <f7-col width="50">
-          <img src="../assets/img/home_icon_safe.png">
+          <img class='product_img' src="../assets/img/home_icon_safe.png">
           <span>车主贷</span>
         </f7-col>
       </f7-grid>
@@ -29,11 +29,11 @@
     <f7-block class="product second">
       <f7-grid no-gutter>
         <f7-col width="50" >
-          <img src="../assets/img/home_icon_fund.png">
+          <img class='product_img' src="../assets/img/home_icon_fund.png">
           <span>寿险贷</span>
         </f7-col>
         <f7-col width="50">
-          <img src="../assets/img/home_icon_car.png">
+          <img class='product_img' src="../assets/img/home_icon_car.png">
           <span>社保贷</span>
         </f7-col>
       </f7-grid>
@@ -42,11 +42,11 @@
     <f7-block class="product third">
       <f7-grid no-gutter>
         <f7-col width="50">
-          <img src="../assets/img/home_icon_ecs.png">
+          <img class='product_img' src="../assets/img/home_icon_ecs.png">
           <span>精英贷</span>
         </f7-col>
         <f7-col width="50">
-          <img src="../assets/img/home_icon_ecs.png">
+          <img class='product_img' src="../assets/img/home_icon_ecs.png">
           <span>信楼贷</span>
         </f7-col>
       </f7-grid>
@@ -126,7 +126,9 @@
   }
   span{
     font-size: 40px;
-    line-height: 100px;
+  }
+  .product_img{
+    margin-top: 30px;
   }
 </style>
 
