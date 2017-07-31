@@ -6,27 +6,38 @@ Vue.use(Router)*/
 
 export default [
   {
-    path:'/about/',
+    path:'/loanpage',
+    components:require('../page/loanpage.vue')
+  },
+  {
+    path:'/accountpage',
+    components:require('../page/accountpage.vue')
+  },
+  {
+    path:'/about',
     components:require('../page/about.vue')
   },
   {
-    path:'/question/',
-    components:require('../page/question.vue'),
+    path:'/question',
+    components:require('../page/question.vue')
   },
   {
-    path:'/loan/',
+    path:'/loan',
     components:require('../page/myloan.vue')
   },
   {
-    path:'/assign/',
+    path:'/assign',
     components:require('../page/assign.vue')
   },
   {
-    path:'/withdraw/',
+    path:'/withdraw',
     components:require('../page/withdraw.vue')
   },
   {
-    path:'/repayplan/',
+    path:'/repayplan',
     components:require('../page/repayplan.vue')
+  },{
+    path:'/findpassword',
+    components:require('../page/findpassword.vue')
   }
 ]

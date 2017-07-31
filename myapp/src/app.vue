@@ -15,15 +15,15 @@
         <f7-pages>
           <f7-page toolbar-fixed navbar-fixed>
             <f7-toolbar tabbar labels>
-              <f7-link icon="icon-ios7homeoutline" tab-link="#loanpage" active text="首页"></f7-link>
-              <f7-link icon="icon-ios7chatbubbleoutline" tab-link="#accountpage" text="我的"></f7-link>
+              <f7-link icon="icon-ios7homeoutline" tab-link="#login" active text="首页"></f7-link>
+              <f7-link icon="icon-ios7chatbubbleoutline" tab-link="#expectedquota" text="我的"></f7-link>
             </f7-toolbar>
             <f7-tabs>
-              <f7-tab id="loanpage" active @tab:show="tabActived('loanpage')">
-                <loanpage></loanpage>
+              <f7-tab id="login" active @tab:show="tabActived('login')">
+                <login></login>
               </f7-tab>
-              <f7-tab id="accountpage" @tab:show="tabActived('accountpage')">
-                <accountpage></accountpage>
+              <f7-tab id="expectedquota" @tab:show="tabActived('expectedquota')">
+                <expectedquota></expectedquota>
               </f7-tab>
             </f7-tabs>
           </f7-page>
@@ -34,14 +34,15 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import accountpage from "./page/accountpage.vue"
-  import loanpage from "./page/loanpage.vue"
+//  import accountpage from "./page/accountpage.vue"
+  import expectedquota from "./page/applynow/expectedquota.vue"
+  import login from "./page/login.vue"
 
   export default {
     name: 'app',
     data(){
       return{
-        activedTab: 'loanpage'
+        activedTab: 'login'
       }
     },
     methods:{
@@ -50,8 +51,8 @@
       }
     },
     components:{
-      accountpage,
-      loanpage
+      expectedquota,
+      login
     }
   }
 </script>

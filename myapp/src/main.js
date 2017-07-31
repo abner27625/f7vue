@@ -33,7 +33,8 @@ new Vue({
   framework7:{
     root:'#app',
     routes:router,
-    pushState: true,
+    //决定地址是否改变，eg: http://localhost:8080/ 跳转后是否变成 http://localhost:8080/#!//about/ 页面跳转目前存在问题
+    pushState: false,
   },
   components: {
     app:App
