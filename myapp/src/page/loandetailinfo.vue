@@ -111,6 +111,15 @@
                 }
                 this.infoList.push(temp);
                 break;
+            case "7":
+              temp = {
+                url:require("../assets/img/pro_top_banner_jy.png"),
+                comprehensiveRate: "1.68",
+                applicablePeople: "授薪类人群高端稳定客户",
+                applicationRequirement: ["23-55（不含）岁", "在现单位在编且连续工作满6个月及以上，外地户籍连续缴纳12个月", "事业机关单位、国企、上市公司、其他大中型企业人员网银发薪月收入3000元以上"]
+              }
+              this.infoList.push(temp);
+              break;
           }
       }
     }

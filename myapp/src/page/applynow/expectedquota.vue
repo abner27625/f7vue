@@ -1,12 +1,12 @@
 <template>
     <div>
-      <f7-list>
+      <f7-list form>
         <f7-list-item>
           <f7-input placeholder="请输入2万-20万的借款金额" type="text"></f7-input><f7-label>元</f7-label>
         </f7-list-item>
         <f7-block style="text-align: left;margin-left: 40px;font-size: 26px">此额度仅为预审批参考额度，请以实际审批结果为准</f7-block>
       </f7-list>
-      <f7-list>
+      <f7-list form>
         <f7-list-item>
           <f7-input placeholder="请输入借款期限" id="time-limit" type="text"></f7-input><f7-label>月</f7-label>
         </f7-list-item>
@@ -43,4 +43,8 @@
     line-height: 100px;
     text-align: left;
   }
+  .label {
+    width: 100px !important;
+  }
+
 </style>

@@ -2,10 +2,10 @@
     <div id="accountpage">
       <div class="list_header">
         <div id="header">
-          <img class="setting" src="../assets/img/me_setting.png">
+          <f7-link href="/setting/"><img class="setting" src="../assets/img/me_setting.png"></f7-link>
           <div class="header_name">
             <span>十年</span>
-            <span style="margin-top: 20px">15210063050</span>
+            <span style="margin-top: 20px">152****3050</span>
           </div>
           <f7-block class="account_header">
             <f7-grid no-gutter>
@@ -13,7 +13,7 @@
                 <img class="header_img" src="../assets/img/me_icon_shop.png">
                 <div class="header_hint">
                   <span>服务门店</span>
-                  <span>世茂大厦</span>
+                  <span>万达广场</span>
                 </div>
               </f7-col>
               <f7-col width="50">
@@ -28,15 +28,15 @@
         </div>
       </div>
       <f7-list>
-        <f7-list-item title="我的借款" :link="/question/" :media="getMedia(1)"></f7-list-item>
-        <f7-list-item title="我要签约" :link="/question/" :media="getMedia(2)"></f7-list-item>
-        <f7-list-item title="提现" :link="/question/" :media="getMedia(3)"></f7-list-item>
-        <f7-list-item title="还款计划" :link="/question/" :media="getMedia(4)"></f7-list-item>
+        <f7-list-item title="我的借款" link="/myloan/" :media="getMedia(1)"></f7-list-item>
+        <f7-list-item title="我要签约" link="/assign/" :media="getMedia(2)"></f7-list-item>
+        <f7-list-item title="提现" link="/withdraw/" :media="getMedia(3)"></f7-list-item>
+        <f7-list-item title="还款计划" link="/repayplan/" :media="getMedia(4)"></f7-list-item>
       </f7-list>
 
       <f7-list>
-        <f7-list-item title="常见问题" :link="/about/" :media="getMedia(5)"></f7-list-item>
-        <f7-list-item title="关于" :link="/about/" :media="getMedia(6)"></f7-list-item>
+        <f7-list-item title="常见问题" link="/question/" :media="getMedia(5)"></f7-list-item>
+        <f7-list-item title="关于" link="/about/" :media="getMedia(6)"></f7-list-item>
       </f7-list>
     </div>
 </template>

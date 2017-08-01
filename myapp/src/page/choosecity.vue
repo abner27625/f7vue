@@ -1,6 +1,7 @@
 <template>
-    <div>
-    </div>
+    <f7-page>
+
+    </f7-page>
 </template>
 
 <script type="text/ecmascript-6">

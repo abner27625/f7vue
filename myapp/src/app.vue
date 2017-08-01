@@ -13,7 +13,8 @@
           </f7-nav-right>
         </f7-navbar>-->
         <f7-pages>
-          <f7-page toolbar-fixed navbar-fixed>
+          <!--navbar-fixed-->
+          <f7-page toolbar-fixed>
             <f7-toolbar tabbar labels>
               <f7-link icon="icon-ios7homeoutline" tab-link="#loanpage" active text="首页"></f7-link>
               <f7-link icon="icon-ios7chatbubbleoutline" tab-link="#accountpage" text="我的"></f7-link>

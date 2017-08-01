@@ -7,38 +7,46 @@ Vue.use(Router)*/
 export default [
   {
     path:'/loanpage/',
-    components:require('./page/loanpage.vue')
+    component:require('./page/loanpage.vue')
   },
   {
     path:'/accountpage/',
-    components:require('./page/accountpage.vue')
+    component:require('./page/accountpage.vue')
   },
   {
     path:'/about/',
-    components:require('./page/about.vue')
+    component:require('./page/about.vue')
   },
   {
     path:'/question/',
-    components:require('./page/question.vue')
+    component:require('./page/question.vue')
   },
   {
-    path:'/loan/',
-    components:require('./page/myloan.vue')
+    path:'/myloan/',
+    component:require('./page/myloan.vue')
   },
   {
     path:'/assign/',
-    components:require('./page/assign.vue')
+    component:require('./page/assign.vue')
   },
   {
     path:'/withdraw/',
-    components:require('./page/withdraw.vue')
+    component:require('./page/withdraw.vue')
   },
   {
     path:'/repayplan/',
-    components:require('./page/repayplan.vue')
+    component:require('./page/repayplan.vue')
   },
   {
     path:'/findpassword/',
-    components:require('./page/findpassword.vue')
+    component:require('./page/findpassword.vue')
+  },
+  {
+    path:'/setting/',
+    component:require('./page/setting.vue')
+  },
+  {
+    path:'/login/',
+    component:require('./page/login.vue')
   }
 ]

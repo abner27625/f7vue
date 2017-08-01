@@ -4,7 +4,7 @@
       <app-banner :listImg="listImg"></app-banner>
     </div>
     <div class="with_share">
-      <f7-link href="/about/" >
+      <f7-link link="/loandetailinfo/" >
         <img id="withshare_img" src="../assets/img/home_icon_enjoy.png">
         <div>
           <p style="padding-top: 60px;font-size: 80px;color: #333333" >和享贷</p>

@@ -17,6 +17,7 @@
           </f7-tab>
         </f7-tabs>-->
         <!--<f7-subnavbar sliding>-->
+      <f7-navbar title="常见问题" back-link=" " sliding></f7-navbar>
           <f7-buttons>
             <f7-button tab-link="#tab1" active>借款相关</f7-button>
             <f7-button tab-link="#tab2">审核放款</f7-button>
@@ -69,6 +70,8 @@
           </ul>
         </f7-tab>
       </f7-tabs>
+
+      <f7-block class="bottom">客服热线:400-001-1955</f7-block>
     </f7-page>
 </template>
 
@@ -111,13 +114,28 @@
     margin-top: 10px;
   }
   .button{
-    margin-top: 150px;
+    margin-top: 90px;
     height: 100px !important;
     font-size: 30px;
     text-align: center;
     line-height: 100px;
   }
   .tabs{
-    margin-top: 80px;
+    /*margin-top: 80px;*/
+  }
+  .navbar{
+    height: 80px;
+    font-weight: 500;
+  }
+  .left{
+    font-size: 50px;
+  }
+  .bottom{
+    color: #008dfe;
+    font-size: 40px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
   }
 </style>

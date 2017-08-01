@@ -1,12 +1,13 @@
 <template>
     <f7-page class="login">
-      <f7-navbar theme="white" navbar-through :dynamic-navbar="true">
+      <!--<f7-navbar theme="white" navbar-through :dynamic-navbar="true">
         <f7-nav-left></f7-nav-left>
         <f7-nav-center sliding>登录</f7-nav-center>
         <f7-nav-right>
         </f7-nav-right>
-      </f7-navbar>
-      <f7-list>
+      </f7-navbar>-->
+      <f7-navbar title="登录" back-link=" " sliding></f7-navbar>
+      <f7-list class="list">
         <f7-list-item>
           <f7-label>Username</f7-label>
           <f7-input name="username" placeholder="请输入手机号" type="text" v-modal="username" class="login_input"></f7-input>
@@ -65,5 +66,12 @@
   .forgetpassword{
     border: none;
     color: rgba(255,255,255,1.0);
+  }
+  .navbar{
+    height: 80px;
+    font-weight: 500;
+  }
+  .list{
+    margin-top: 100px;
   }
 </style>
