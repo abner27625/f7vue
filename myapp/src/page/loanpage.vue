@@ -3,14 +3,12 @@
     <div>
       <app-banner :listImg="listImg"></app-banner>
     </div>
-    <div class="with_share">
-      <f7-link link="/loandetailinfo/" >
+    <div class="with_share" @click="goto">
         <img id="withshare_img" src="../assets/img/home_icon_enjoy.png">
         <div>
           <p style="padding-top: 60px;font-size: 80px;color: #333333" >和享贷</p>
           <p style="font-size: 38px;color: #999999">手机<span style="color:#ff8f19;font-size: 40px">在线</span>审批，<span style="color:#ff8f19;font-size: 40px">快速</span>审批</p>
         </div>
-      </f7-link>
     </div>
 
     <f7-block class="product first">
@@ -56,6 +54,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+    import axios from 'axios'
     import banner from '../components/banner_item.vue'
 
     import a from '../assets/img/home_banner_enjoy.png'
@@ -72,6 +71,23 @@
           listImg: [{url: a}, {url: b}, {url: c}, {url: d}, {url: e}]
         }
       },
+      mounted(){
+        /*this.$nextTick(_ => {
+          this.$f7.showIndicator()
+          axios.all('query?type=yuantong&postid=11111111111',
+            function(req,res){
+              res.header("Access-Control-Allow-Origin", "*");
+              res.header("Access-Control-Allow-Headers", "X-Requested-With");
+            }
+          ).then(
+            res=>console.log(res.data)
+          ).then(
+            console.log("就是这么快")
+          ).then(
+            this.$f7.hideIndicator()
+          )
+        })*/
+      },
       components: {
         'app-banner': banner,
       },
@@ -80,7 +96,8 @@
           return '/loanDetailInfo/?type=${type}'
         },
         goto(){
-          this.$f7.alert("测试一下仅此而已")
+          console.log("that is ok ,i'm so sorry")
+          this.$f7.mainView.router.load({url: `/loandetailinfo/?type=2`})
         }
       },
       computed:{
@@ -122,7 +139,7 @@
     border-bottom: 1px solid;
   }
   .first{
-    margin-top: 20px;
+    margin-top: 30px;
   }
   span{
     font-size: 40px;

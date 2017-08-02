@@ -7,7 +7,7 @@
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
-    <name>和信借款</name>
+    <name>狗带的前奏</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>

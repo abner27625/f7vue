@@ -48,5 +48,9 @@ export default [
   {
     path:'/login/',
     component:require('./page/login.vue')
+  },
+  {
+    path:'/loandetailinfo/',
+    component:require('./page/loandetailinfo.vue')
   }
 ]

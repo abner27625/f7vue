@@ -1,7 +1,7 @@
 <template>
     <div>
       <f7-list>
-        <f7-list-item v-for="info in infolist">
+        <f7-list-item v-for="info in infolist" :key="key">
           <div id="card">
             <span>本期应还金额:{{info.shouldBalance}}</span><span style="float: right;text-align: right">{{info.repaymentDay}}</span>
             <div>
