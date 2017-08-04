@@ -52,5 +52,9 @@ export default [
   {
     path:'/loandetailinfo/',
     component:require('./page/loandetailinfo.vue')
+  },
+  {
+    path:'/lottery/',
+    component:require('./page/lottery/lottery.vue')
   }
 ]

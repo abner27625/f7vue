@@ -1,7 +1,9 @@
 import axios from 'axios'
 
-const DEV_BASE_URL = 'http://www.kuaidi100.com/'
-const PROD_BASE_URL = 'http://www.kuaidi100.com/'
+const DEV_BASE_URL = 'http://127.0.0.1:8080'
+//const PROD_BASE_URL = 'http://www.kuaidi100.com/'
+const PROD_BASE_URL = 'http://127.0.0.1:8080'
+
 axios.defaults.baseURL = process.env.NODE_ENV === 'production' ? DEV_BASE_URL : PROD_BASE_URL
 
 // Add a request interceptor

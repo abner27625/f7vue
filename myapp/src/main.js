@@ -14,10 +14,13 @@ import Framework7 from 'framework7'
 import Framework7Vue from 'framework7-vue'
 
 // Import App Custom Styles
- import './assets/fonts/iconfont.css'
- import './assets/styles/app.less'
+import './assets/fonts/iconfont.css'
+import './assets/styles/app.less'
 
 import AppStyles from './assets/styles/app.css'
+
+// Import Vuex store
+import store from './store'
 
 // Import F7 iOS Theme Styles
 import Framework7Theme from 'framework7/dist/css/framework7.ios.min.css'
@@ -37,6 +40,8 @@ import './network'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  //添加状态管理器
+  store,
   template: '<app/>',
   framework7:{
     root:'#app',

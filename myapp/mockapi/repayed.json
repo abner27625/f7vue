@@ -1,0 +1,24 @@
+{
+  "err_code": 0,
+  "err_msg": "success",
+  "data": [
+    {
+      "shouldBalance":1000,
+      "repaymentDay":"2-10",
+      "shouldLateFee":"0.10",
+      "isTrue":true,
+      "shouldPenaltyInterest":"0.10",
+      "monthBalance":"200",
+      "periodsNum":"第一期"
+    },
+    {
+      "shouldBalance":"1200",
+      "repaymentDay":"3-10",
+      "shouldLateFee":"0.00",
+      "isTrue":false,
+      "shouldPenaltyInterest":"0.10",
+      "monthBalance":"300",
+      "periodsNum":"第二期"
+    }
+  ]
+}

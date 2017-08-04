@@ -19,9 +19,9 @@
         </f7-list-item>
       </f7-list>
 
-      <f7-button v-modal="login" text="登录" href="/accountpage/"></f7-button>
+      <f7-button text="登录" href="/accountpage/"></f7-button>
 
-      <f7-button v-modal="forget" text="?忘记密码" href="/findpassword/" class="forgetpassword"></f7-button>
+      <f7-button text="?忘记密码" href="/findpassword/" class="forgetpassword"></f7-button>
 
 <!--
       <f7-link @click="$router.load({url: '/about/'})" text="我就静静的看看不说话!"></f7-link>
@@ -30,12 +30,31 @@
 </template>
 
 <script type="text/ecmascript-6">
+    import axios from 'axios'
     export default{
-        props: [],
-
+      props: [],
+      methods:{
+        login(){
+          setTimeout(axios({
+            method:'post',
+            url:'/query',
+            data:{
+              type:'yuantong',
+              postid:'11111111111'
+            },
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
+          }).then(function(res){
+            console.log(res.data)
+          }).then(
+            this.$f7.alert("mmp,找死啊")
+          ),1500)
+        }
+      }
     }
 </script>
-<style scoped>
+<style type="text/css" scoped>
   .login{
     /*background-image: url('../assets/img/login_bg.png');*/
   }

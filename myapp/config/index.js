@@ -32,8 +32,21 @@ module.exports = {
     autoOpenBrowser: false,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+   /* proxypath: 'http://www.kuaidi100.com',
+    context: [ //代理路径
+      '/query',
+      '/ugc',
+      '/v1',
+      '/v2',
+      '/v3',
+      '/v4',
+      '/bos',
+      '/member',
+      '/promotion',
+      '/eus',
+    ],*/
     proxyTable: {
-      '/api': //url输入的相对路径
+      /*'/api': //url输入的相对路径
       {
         //query?type=yuantong&postid=11111111111
         target: 'http://www.kuaidi100.com/query?type=yuantong&postid=11111111111',
@@ -42,7 +55,7 @@ module.exports = {
         pathRewrite: {
           '^/api': ''
         }
-      }
+      }*/
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

@@ -1,7 +1,7 @@
 <template>
     <div>
       <f7-list>
-        <f7-list-item v-for="info in infolist" :key="key">
+        <f7-list-item v-for="info in norepay" :key="key">
           <div id="card">
             <span>本期应还金额:{{info.shouldBalance}}</span><span style="float: right;text-align: right">{{info.repaymentDay}}</span>
             <div>
@@ -16,6 +16,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+    import {mapState} from 'vuex'
     export default{
         props: [],
       /*
@@ -31,7 +32,20 @@
               }
             }
         },*/
-        data(){
+      computed: {
+        ...mapState({
+          norepay: state => state.norepay,
+        })
+      },
+      mounted(){
+        this.$nextTick(_ => {
+          this.$f7.showIndicator()
+          this.$store.dispatch('getNorepay', () => {
+            this.$f7.hideIndicator()
+          })
+        })
+      },
+        /*data(){
           return{
             infolist:[
               {
@@ -53,7 +67,7 @@
               }
             ]
           }
-        },
+        },*/
         methods:{
           getBoolean(name){
             if(this.name === '0.00'){
