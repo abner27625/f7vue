@@ -76,7 +76,10 @@
               return false
             }
           }
-        }
+        },
+      destroyed:function(){
+        this.$f7.hideIndicator();
+      }
     }
 </script>
 <style scoped>

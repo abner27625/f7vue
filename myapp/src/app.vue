@@ -16,8 +16,9 @@
           <!--navbar-fixed-->
           <f7-page toolbar-fixed>
             <f7-toolbar tabbar labels>
-              <f7-link icon="icon-ios7homeoutline" tab-link="#loanpage" active text="首页"></f7-link>
-              <f7-link icon="icon-ios7chatbubbleoutline" tab-link="#accountpage" text="我的"></f7-link>
+              <!--icon-ios7homeoutline    icon-ios7chatbubbleoutline-->
+              <f7-link icon="ok" tab-link="#loanpage" active text="首页"></f7-link>
+              <f7-link icon="no" tab-link="#accountpage" text="我的"></f7-link>
             </f7-toolbar>
             <f7-tabs>
               <f7-tab id="loanpage" active @tab:show="tabActived('loanpage')">
@@ -74,12 +75,12 @@
     height: 100px !important;
     width: 50% !important;
   }
-  .icon-ios7homeoutline{
+  .ok{
     width: 48px !important;
     height: 48px !important;
     background-image: url("./assets/img/home_toolbar_jie_hover.png") !important;
   }
-  .icon-ios7chatbubbleoutline{
+  .no{
     width: 48px !important;
     height: 48px !important;
     background-image: url("./assets/img/home_toolbar_wo_hover.png") !important;

@@ -46,16 +46,18 @@ module.exports = {
       '/eus',
     ],*/
     proxyTable: {
-      /*'/api': //url输入的相对路径
+      '/api': //url输入的相对路径
       {
         //query?type=yuantong&postid=11111111111
-        target: 'http://www.kuaidi100.com/query?type=yuantong&postid=11111111111',
+        //https://github.com/abner27625/f7vue/tree/master/myapp/mockapi
+        //http://www.kuaidi100.com/query?type=yuantong&postid=11111111111
+        target: 'https://github.com/abner27625/f7vue/tree/master/myapp/mockapi',
         withCredentials:true,
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
         }
-      }*/
+      }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

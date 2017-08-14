@@ -41,7 +41,7 @@ export function updateTimeline({commit}, { mid, type }) {
 }*/
 
 export function getNorepay({commit},callback = () =>{}){
-  axios.get('/norepay.json').then(res => {
+  axios.post('/norepay.json').then(res => {
     let norepay = res.data
     commit(types.NO_REPAY,{
       norepay
